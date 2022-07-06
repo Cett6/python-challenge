@@ -1,0 +1,6 @@
+Financial Analysis
+----------------------------
+Totalmonths:86
+Total: $22564198
+Greatest increase in profits: []
+Greastes decrease in profits: []
