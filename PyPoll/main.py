@@ -21,7 +21,7 @@ with open(election_data_in,"r") as csvfile:
     totalnet += int(firstrow[0])
     previousnet=int(firstrow[0])
 
-    candidateList = ["Chales Casper Stockham", "Diana DeGette", "Raymon Anthony Doane"]
+    candidateList = []
 
     Stockham_Votes = 0
     Degette_Votes = 0
@@ -31,7 +31,9 @@ with open(election_data_in,"r") as csvfile:
         totalvotes += 1
         
         candidates = row[2]
-        candidateList.append(candidates)
+       # candidateList.append(candidates)
+        if not candidates in candidateList:
+            candidateList.append(candidates)
 
         if row[2]=="Charles Casper Stockham":
             Stockham_Votes += 1
@@ -41,7 +43,7 @@ with open(election_data_in,"r") as csvfile:
             Doane_Votes += 1
         else:
             pass
-    candidateList = list(set(candidateList))
+   # candidateList = list(set(candidateList))
 
     #Vote totals
     Stockham_Votes_Percent = (Stockham_Votes / totalvotes) * 100

@@ -2,5 +2,6 @@ Financial Analysis
 ----------------------------
 Totalmonths:86
 Total: $22564198
-Greatest increase in profits: []
-Greastes decrease in profits: []
+Average Change: $-8311.105882352942
+Greatest increase in profits: Aug-16, $1862002
+Greastes decrease in profits: Feb-14, $1862002
